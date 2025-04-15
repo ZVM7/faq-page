@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    height: auto;
+
+
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+  }
+  .image-side {
+    flex: 0 0 40%;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+  }
+  .color-side {
+    flex: 1;
+    background-color: hsl(275, 100%, 97%);
+    min-height: 100vh; /
+  }
+
+  .actual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:1px;
+    align-items:flex-start;
+    padding-left: 45px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 20;
+    background-color:hsl(0, 100%, 100%);
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+
+}
+.actual h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    color: hsl(292, 42%, 14%);
+    display: flex;
+    justify-content: space-between; 
+    gap: 6px;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0; 
+}
+.actual h1:hover {
+    cursor: pointer;
+    color: hsl(292, 68%, 46%);
+}
+.actual h1 p {
+    text-align: left;
+}
+
+
+.actual h1 img {
+    margin-right:  30px;
+}
+
+.resp {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    color:hsl(292, 16%, 49%);
+    font-weight: 500;
+    margin: 0;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+
+.item.active .resp {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 10px;
+}
+
+h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
